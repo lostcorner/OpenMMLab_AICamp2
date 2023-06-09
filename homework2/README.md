@@ -31,21 +31,31 @@ checkpoint=dict(type='CheckpointHook', interval=1, save_best='auto', max_keep_ck
 mim train mmpretrain resnet50_finetune.py --work-dir=./exp
 ```
 resnet50(epoch=50)
+
 配置文件为：[resnet50_finetune.py](resnet50_finetune.py)
+
 训练日志为：[20230609_205459.log](20230609_205459.log)
+
 
 ## 验证
 ```bash
 mim test mmpretrain resnet50_finetune.py --checkpoint ./exp/best_accuracy_top1_epoch_42.pth 
 ```
 测试集评估日志为：[20230609_211648.log](20230609_211648.log)
+
 结果如下：
+
 ![img](test.png)
 
 ## 预测
 预测使用了API，同时解决了中文显示的问题:[predict.ipynb](predict.ipynb)
+
 预测结果如下：
+
 ![img](predict-apple.png)
+
 这里参考了两位同学
+
 [CrabBoss-lab](https://github.com/CrabBoss-lab/openmmlab-Camp/blob/master/02-mmpretrain-task/05%E9%A2%84%E6%B5%8B.ipynb)
+
 [xiaomile](https://github.com/xiaomile/Openmmlab-AI-Camp-2th/blob/main/%E4%BD%9C%E4%B8%9A2/testpic.py)
