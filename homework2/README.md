@@ -49,9 +49,7 @@ mim test mmpretrain resnet50_finetune.py --checkpoint ./exp/best_accuracy_top1_e
 
 ## 预测
 预测使用了API，同时解决了中文显示的问题:[predict.ipynb](predict.ipynb)
-原图为：
-
-![img](apple.jpeg)
+原图为：[img](apple.jpeg)
 
 预测结果如下：
 
